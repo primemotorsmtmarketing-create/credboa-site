@@ -12,7 +12,7 @@ body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.5; backgrou
 /* Topbar */
 .topbar { background: #fff; border-bottom: 1px solid #e7eef7; position: sticky; top: 0; z-index: 10; }
 .topbar .wrap { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-.logo { height: 65px; }
+.logo { max-height: 65px; height: auto; width: auto; object-fit: contain; }
 .topbar nav a { margin-left: 16px; text-decoration: none; color: #334155; font-weight: 600; }
 .topbar nav a.whats { background: var(--green); color: #fff; padding: 10px 14px; border-radius: 10px; }
 
@@ -51,4 +51,7 @@ body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.5; backgrou
 .simulacao h4 { margin: 0 0 10px; font-size: 1rem; font-weight: bold; }
 .parcelas { display: flex; justify-content: space-around; margin-bottom: 8px; }
 .parcelas span { display: inline-block; background: #fff; padding: 8px 10px; border: 1px solid #d7e0ee; border-radius: 8px; font-weight: bold; color: var(--green); }
+
+/* Footer */
+.footer { background: #0b1220; color: #c9d4e5; padding: 26px 0; margin-top: 30px; text-align: center; }
 
