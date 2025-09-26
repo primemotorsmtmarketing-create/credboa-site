@@ -1,70 +1,54 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CredBoa — Financiamento de veículos</title>
+  <title>CredBoa — Financiamento mesmo negativado</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="hero-garage.jpg" as="image">
 </head>
 <body>
 
-  <!-- ===== Topbar ===== -->
+  <!-- Topbar -->
   <header class="topbar">
     <div class="wrap">
-      <!-- LOGO (aumentada) -->
-      <a href="#" class="brand" aria-label="CredBoa">
-        <img
-          src="./FCS%20Branding%20-%20Fintech%20Prime%20Motors%20(1)-30.png"
-          alt="CredBoa"
-          class="logo"
-          loading="eager"
-        />
+      <a class="brand" href="#">
+        <!-- Logo maior (ajustável via CSS .topbar .logo) -->
+        <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" class="logo">
       </a>
 
       <nav>
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="whats" target="_blank"
-           href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+vim+pelo+site+CredBoa%21">
+        <a class="whats" href="https://wa.me/5599999999999?text=Ol%C3%A1%20tenho%20interesse%20no%20financiamento" target="_blank" rel="noopener">
           WhatsApp
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-
       <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
-
-      <p>Crédito aprovado mesmo para negativados.<br>
-         <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
+      <p>Crédito aprovado mesmo para negativados.</p>
+      <p><span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
 
       <div class="cta-row">
         <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-
-        <!-- Botão WhatsApp -->
-        <a class="btn btn-green outline-on-hover"
-           target="_blank"
-           href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+simular+meu+financiamento+pelo+site+CredBoa.">
+        <a class="btn btn-green btn-whats" href="https://wa.me/5599999999999?text=Ol%C3%A1%20quero%20simular%20meu%20financiamento" target="_blank" rel="noopener">
           Atendimento WhatsApp (11) 99999-9999
         </a>
       </div>
 
-      <!-- BENEFÍCIOS -->
       <div class="benefits">
         <div class="bcard">
           <div class="btitle">✅ Aprovação Facilitada</div>
           <div class="bdesc">Crédito aprovado mesmo para negativados</div>
         </div>
-
         <div class="bcard">
           <div class="btitle">💰 Entrada Flexível</div>
           <div class="bdesc">A partir de 50% do valor do veículo</div>
         </div>
-
         <div class="bcard">
           <div class="btitle">🚗 Carros Seminovos</div>
           <div class="bdesc">Veículos revisados e com garantia</div>
@@ -73,14 +57,18 @@
     </div>
   </section>
 
-  <!-- ===== ESTOQUE ===== -->
+  <!-- ESTOQUE -->
   <main class="wrap">
     <section id="estoque">
       <h2>Estoque (via Prime Motors)</h2>
-      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>.</p>
-      <div id="cars" class="grid"></div>
+      <p class="note">Demonstração: estes veículos foram preenchidos como exemplos da aba Nissan.</p>
+
+      <div id="cars" class="grid">
+        <!-- cards renderizados por app.js -->
+      </div>
     </section>
 
+    <!-- COMO FUNCIONA -->
     <section id="como-funciona">
       <h2>Como funciona</h2>
       <ol class="steps">
@@ -92,15 +80,16 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="wrap">
       <small>© <span id="year"></span> CredBoa — Demonstração.</small>
     </div>
   </footer>
 
-  <script src="app.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script src="app.js"></script>
 </body>
 </html>
