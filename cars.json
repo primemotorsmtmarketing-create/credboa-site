@@ -1,48 +1,53 @@
 [
   {
     "marca": "Nissan",
-    "modelo": "Frontier LE AT 4x4 Repasse",
+    "modelo": "Frontier LE AT 4x4",
     "ano": 2017,
     "combustivel": "Diesel",
-    "cor": "Prata",
-    "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Frontier+LE+2017"
+    "cambio": "Automático",
+    "km": "92.000",
+    "preco": 145000,
+    "image": "https://placehold.co/900x560?text=Nissan+Frontier+LE+2017"
   },
   {
     "marca": "Nissan",
-    "modelo": "Kicks Advance 1.6 Aut",
+    "modelo": "Kicks Advance 1.6",
     "ano": 2024,
     "combustivel": "Flex",
-    "cor": "Preto",
-    "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Kicks+Advance+2024"
+    "cambio": "Automático",
+    "km": "0",
+    "preco": 118000,
+    "image": "https://placehold.co/900x560?text=Nissan+Kicks+Advance+2024"
   },
   {
     "marca": "Nissan",
-    "modelo": "March 16S",
+    "modelo": "March 1.6 16V",
     "ano": 2013,
     "combustivel": "Flex",
-    "cor": "Prata",
-    "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+March+2013"
+    "cambio": "Manual",
+    "km": "98.000",
+    "preco": 42000,
+    "image": "https://placehold.co/900x560?text=Nissan+March+2013"
   },
   {
     "marca": "Nissan",
-    "modelo": "Sentra 2.0 Leilão Repasse",
+    "modelo": "Sentra 2.0 SL",
     "ano": 2014,
     "combustivel": "Flex",
-    "cor": "Preto",
-    "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Sentra+2014"
+    "cambio": "Automático",
+    "km": "120.000",
+    "preco": 59000,
+    "image": "https://placehold.co/900x560?text=Nissan+Sentra+2014"
   },
   {
     "marca": "Nissan",
-    "modelo": "Frontier S Repasse",
+    "modelo": "Frontier S 4x4",
     "ano": 2014,
     "combustivel": "Diesel",
-    "cor": "Branco",
-    "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Frontier+S+2014"
+    "cambio": "Manual",
+    "km": "160.000",
+    "preco": 105000,
+    "image": "https://placehold.co/900x560?text=Nissan+Frontier+S+2014"
   }
 ]
 
