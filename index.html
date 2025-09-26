@@ -1,141 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CredBoa – Financiamento mesmo negativado</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CredBoa — Financiamento mesmo negativado</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- Topbar -->
   <header class="topbar">
-    <div class="wrap topbar-inner">
-      <!-- Logo travada, sem distorcer -->
-      <img
-        src="FCS Branding - Fintech Prime Motors (1)-30.png"
-        class="logo"
-        alt="CredBoa"
-        decoding="async"
-        fetchpriority="high"
-      />
-      <nav>
+    <div class="wrap topbar__row">
+      <a class="brand" href="#">
+        <!-- mantém o mesmo arquivo que você subiu -->
+        <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" />
+      </a>
+
+      <nav class="menu">
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a href="https://wa.me/5511999999999" class="whats" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="whats" href="https://wa.me/5599999999999" target="_blank" rel="noopener">
+          WhatsApp
+        </a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="wrap">
+    <div class="hero__overlay"></div>
+    <div class="wrap hero__content">
       <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
+
       <p>Crédito aprovado mesmo para negativados.<br />
-        <span class="green">Entrada facilitada</span> a partir de 50% do valor.
-      </p>
+         <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
 
-      <div class="hero-buttons">
-        <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-        <a class="btn btn-green" href="https://wa.me/5511999999999" target="_blank" rel="noopener">Atendimento WhatsApp</a>
-      </div>
-    </div>
+      <div class="hero__ctas">
+        <a href="#estoque" class="btn btn-green">Ver Carros Disponíveis</a>
 
-    <div class="benefits">
-      <div class="bcard">
-        <div class="btitle">✅ Aprovação Facilitada</div>
-        <div class="bdesc">Crédito aprovado mesmo para negativados</div>
-      </div>
-      <div class="bcard">
-        <div class="btitle">💰 Entrada Flexível</div>
-        <div class="bdesc">A partir de 50% do valor do veículo</div>
-      </div>
-      <div class="bcard">
-        <div class="btitle">🚗 Carros Seminovos</div>
-        <div class="bdesc">Veículos revisados e com garantia</div>
+        <!-- Botão do WhatsApp igual ao CTA principal -->
+        <a class="btn btn-green btn-alt"
+           href="https://wa.me/5599999999999"
+           target="_blank" rel="noopener">
+          Atendimento WhatsApp (11) 99999-9999
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ESTOQUE -->
-  <main class="wrap">
-    <section id="estoque">
-      <h2>Estoque</h2>
+  <main id="estoque" class="wrap">
+    <h2 class="h2-section">Estoque</h2>
 
-      <div class="grid">
-        <!-- CARRO 1 -->
-        <div class="card">
-          <img src="https://cdn.primemotorsmt.com.br/cars/chevrolet-onix.jpg" alt="Chevrolet Onix">
-          <div class="card-body">
-            <h3>Chevrolet Onix 1.0 LT</h3>
-            <p class="meta">2022 • 45.000 km • Manual • Flex</p>
-            <p class="price">R$ 65.000</p>
-
-            <div class="entry">
-              <strong>Entrada Mínima:</strong> <span class="green">R$ 32.500</span>
-            </div>
-
-            <div class="simulacao">
-              <h4>Simulação de Parcelas</h4>
-              <div class="parcelas">
-                <span>24x <strong>R$ 1.696,97</strong></span>
-                <span>48x <strong>R$ 1.035,98</strong></span>
-                <span>60x <strong>R$ 910,22</strong></span>
-              </div>
-              <small>*Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.</small>
-            </div>
-
-            <a
-              href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Chevrolet%20Onix%201.0%20LT"
-              class="btn btn-green"
-              target="_blank"
-              rel="noopener"
-            >Tenho Interesse</a>
-          </div>
-        </div>
-
-        <!-- CARRO 2 -->
-        <div class="card">
-          <img src="https://cdn.primemotorsmt.com.br/cars/hyundai-hb20.jpg" alt="Hyundai HB20">
-          <div class="card-body">
-            <h3>Hyundai HB20 1.6 Comfort</h3>
-            <p class="meta">2021 • 38.000 km • Automático • Flex</p>
-            <p class="price">R$ 58.000</p>
-
-            <div class="entry">
-              <strong>Entrada Mínima:</strong> <span class="green">R$ 29.000</span>
-            </div>
-
-            <div class="simulacao">
-              <h4>Simulação de Parcelas</h4>
-              <div class="parcelas">
-                <span>24x <strong>R$ 1.514,00</strong></span>
-                <span>48x <strong>R$ 923,00</strong></span>
-                <span>60x <strong>R$ 810,00</strong></span>
-              </div>
-              <small>*Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.</small>
-            </div>
-
-            <a
-              href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Hyundai%20HB20"
-              class="btn btn-green"
-              target="_blank"
-              rel="noopener"
-            >Tenho Interesse</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="grid cars" id="cars-list">
+      <!-- Renderizado pelo app.js -->
+    </div>
   </main>
+
+  <!-- COMO FUNCIONA (âncora simples) -->
+  <section id="como-funciona" class="wrap howto">
+    <h2 class="h2-section">Como funciona</h2>
+    <ol class="steps">
+      <li>Escolha o carro.</li>
+      <li>Defina sua <strong>entrada</strong> (mínimo 50%).</li>
+      <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
+    </ol>
+  </section>
 
   <footer class="footer">
     <div class="wrap">
-      <small>© <span id="year"></span> CredBoa — Demonstração</small>
+      <small>&copy; <span id="year"></span> CredBoa — Demonstração.</small>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
+
 
