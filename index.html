@@ -1,72 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CredBoa — Financiamento de veículos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CredBoa – Financiamento mesmo negativado</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Topbar -->
   <header class="topbar">
     <div class="wrap">
-      <a class="brand" href="#">
-        <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" />
-      </a>
+      <img src="FCS Branding - Fintech Prime Motors (1)-30.png" class="logo" alt="CredBoa Logo" />
       <nav>
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="whats" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/5511999999999" class="whats" target="_blank">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero-inner">
+    <div class="wrap">
       <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
-      <p>Crédito aprovado mesmo para negativados.</p>
-      <p><span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
-
-      <div class="hero-actions">
+      <p>Crédito aprovado mesmo para negativados.<br>
+      <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
+      
+      <div class="hero-buttons">
         <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-        <a class="btn btn-outline" href="https://wa.me/5599999999999?text=Quero+simular+meu+financiamento" target="_blank">
-          Atendimento WhatsApp (11) 99999-9999
-        </a>
+        <a class="btn btn-green" href="https://wa.me/5511999999999" target="_blank">Atendimento WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="benefits">
+      <div class="bcard">
+        <div class="btitle">✅ Aprovação Facilitada</div>
+        <div class="bdesc">Crédito aprovado mesmo para negativados</div>
+      </div>
+      <div class="bcard">
+        <div class="btitle">💰 Entrada Flexível</div>
+        <div class="bdesc">A partir de 50% do valor do veículo</div>
+      </div>
+      <div class="bcard">
+        <div class="btitle">🚗 Carros Seminovos</div>
+        <div class="bdesc">Veículos revisados e com garantia</div>
       </div>
     </div>
   </section>
 
-  <!-- Estoque -->
-  <main class="wrap" id="estoque">
-    <h2 class="title">Nosso Estoque</h2>
-    <p class="note">Simulação com taxa de <strong>1,89% a.m.</strong>. Valores sujeitos à aprovação de crédito.</p>
+  <!-- ESTOQUE -->
+  <main class="wrap">
+    <section id="estoque">
+      <h2>Estoque</h2>
+      <div class="grid">
+        <!-- Carro 1 -->
+        <div class="card">
+          <img src="https://cdn.primemotorsmt.com.br/cars/chevrolet-onix.jpg" alt="Chevrolet Onix">
+          <div class="card-body">
+            <h3>Chevrolet Onix 1.0 LT</h3>
+            <p class="meta">2022 • 45.000 km • Manual • Flex</p>
+            <p class="price">R$ 65.000</p>
 
-    <div id="cars" class="grid">
-      <!-- Cards carregados via JS -->
-    </div>
+            <div class="entry">
+              <strong>Entrada Mínima:</strong> <span class="green">R$ 32.500</span>
+            </div>
+
+            <div class="simulacao">
+              <h4>Simulação de Parcelas</h4>
+              <div class="parcelas">
+                <span>24x <strong>R$ 1.696,97</strong></span>
+                <span>48x <strong>R$ 1.035,98</strong></span>
+                <span>60x <strong>R$ 910,22</strong></span>
+              </div>
+              <small>*Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.</small>
+            </div>
+
+            <a href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Chevrolet%20Onix%201.0%20LT" class="btn btn-green">Tenho Interesse</a>
+          </div>
+        </div>
+
+        <!-- Carro 2 -->
+        <div class="card">
+          <img src="https://cdn.primemotorsmt.com.br/cars/hyundai-hb20.jpg" alt="Hyundai HB20">
+          <div class="card-body">
+            <h3>Hyundai HB20 1.6 Comfort</h3>
+            <p class="meta">2021 • 38.000 km • Automático • Flex</p>
+            <p class="price">R$ 58.000</p>
+
+            <div class="entry">
+              <strong>Entrada Mínima:</strong> <span class="green">R$ 29.000</span>
+            </div>
+
+            <div class="simulacao">
+              <h4>Simulação de Parcelas</h4>
+              <div class="parcelas">
+                <span>24x <strong>R$ 1.514,00</strong></span>
+                <span>48x <strong>R$ 923,00</strong></span>
+                <span>60x <strong>R$ 810,00</strong></span>
+              </div>
+              <small>*Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.</small>
+            </div>
+
+            <a href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Hyundai%20HB20" class="btn btn-green">Tenho Interesse</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <!-- Como funciona (opcional para manter o restante do site) -->
-  <section id="como-funciona" class="wrap" style="margin-top:40px">
-    <h2>Como funciona?</h2>
-    <ol class="steps">
-      <li>Escolha o carro.</li>
-      <li>Defina sua <strong>entrada</strong> (50% do valor do veículo ou R$25.000 – o que for maior).</li>
-      <li>Simule as parcelas em 24x, 48x ou 60x a 1,89% a.m.</li>
-      <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
-    </ol>
-  </section>
 
   <footer class="footer">
     <div class="wrap">
-      <small>© <span id="year"></span> CredBoa — Demonstração.</small>
+      <small>© <span id="year"></span> CredBoa – Demonstração</small>
     </div>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script src="app.js"></script>
 </body>
 </html>
+
