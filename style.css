@@ -60,15 +60,15 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  background: url('carros-garagem.jpg') center/cover no-repeat;
+  background: url('pngtree-cars-in-parking-garage-interior-image.png') center/cover no-repeat;
   color: white;
   text-align: center;
-  padding: 80px 20px 40px;
+  padding: 90px 20px 50px;
 }
 
 .hero h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -77,6 +77,10 @@ body {
   font-size: 1.2rem;
   margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero .green {
+  color: var(--green);
 }
 
 .btn {
@@ -100,7 +104,12 @@ body {
   background: #17a93d;
 }
 
-/* BENEFITS (cards abaixo do banner) */
+.whatsapp-info {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+/* ===== BENEFITS ===== */
 .benefits {
   display: flex;
   justify-content: center;
@@ -115,6 +124,7 @@ body {
   padding: 20px;
   width: 260px;
   color: white;
+  text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -128,6 +138,7 @@ body {
   font-size: 0.95rem;
 }
 
+/* ===== OUTRAS SEÇÕES ===== */
 .note {
   font-size: 13px;
   color: #64748b;
@@ -140,7 +151,7 @@ body {
   margin: 16px 0 40px;
 }
 
-@media(min-width:900px) {
+@media (min-width: 900px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -149,7 +160,7 @@ body {
 .card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, .06);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   border: 1px solid #e7eef7;
 }
