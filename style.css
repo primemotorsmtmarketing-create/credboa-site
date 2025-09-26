@@ -38,3 +38,71 @@ h2{font-size:26px;margin:26px 0 10px}
 .steps li{margin:8px 0}
 input[type=number]{width:100%;padding:10px;border-radius:10px;border:1px solid #d7e0ee}
 label{font-size:13px;color:#475569}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: url('https://images.unsplash.com/photo-1571126771168-3d0e2b5c50b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero h1 .green {
+  color: #27ae60;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #1e874b;
+}
+
+/* ===== BENEFITS SECTION ===== */
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.bcard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.btitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.bdesc {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
