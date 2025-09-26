@@ -15,3 +15,4 @@ Primeira versão estática (HTML/CSS/JS) para testes.
 - **Cloudflare Pages**: crie um projeto e conecte ao seu repositório ou faça upload manual. Plano grátis.
 
 © 2025 CredBoa
+<!-- teste para novo deploy -->
