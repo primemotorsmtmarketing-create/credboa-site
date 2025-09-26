@@ -1,89 +1,89 @@
 :root{
   --green:#22c55e;
-  --dark:#0f172a;
+  --green-dark:#16a34a;
   --ink:#0b1324;
-  --bg:#f6f8fb
+  --dark:#0f172a;
+  --bg:#f6f8fb;
+  --line:#e7eef7;
+  --muted:#64748b;
 }
+
 *{box-sizing:border-box}
 body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;line-height:1.5;background:var(--bg);color:var(--ink)}
 .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
 
-/* Topbar */
-.topbar{background:#fff;border-bottom:1px solid #e7eef7;position:sticky;top:0;z-index:10}
-.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
-.brand{display:flex;align-items:center;text-decoration:none}
-.topbar .logo{
-  display:block;
-  height:56px;         /* ajuste a altura da logo aqui */
-  width:auto;
-  object-fit:contain;
-}
+/* TOPBAR */
+.topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:15}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+.brand img{height:48px;display:block}
 .topbar nav a{margin-left:16px;text-decoration:none;color:#334155;font-weight:600}
 .topbar nav a.whats{color:#fff;background:var(--green);padding:10px 14px;border-radius:10px}
+.topbar nav a.whats:hover{background:var(--green-dark)}
 
 /* HERO */
 .hero{
+  position:relative;
   color:#fff;
   text-align:center;
-  padding:84px 0 48px;
-  background:linear-gradient(180deg,rgba(0,0,0,.50),rgba(0,0,0,.65)),
-             url('hero-garage.jpg') center/cover no-repeat;
+  padding:88px 0 40px;
+  background:
+    linear-gradient(180deg, rgba(15,23,42,.65) 0%, rgba(15,23,42,.65) 100%),
+    url('hero-garage.jpg') center/cover no-repeat;
 }
 .hero .green{color:var(--green)}
-h1{font-size:40px;margin:0 0 8px}
-h2{font-size:26px;margin:26px 0 10px}
+.hero .hero-inner{max-width:900px;margin:0 auto}
+.hero h1{font-size:48px;margin:0 0 10px;text-shadow:2px 2px 8px rgba(0,0,0,.35)}
+.hero p{font-size:20px;margin:2px 0;text-shadow:1px 1px 4px rgba(0,0,0,.35)}
 
-.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:14px 0 8px}
-
-/* Botões */
-.btn{display:inline-block;padding:14px 22px;border-radius:12px;text-decoration:none;font-weight:800;border:2px solid transparent}
+.btn{display:inline-block;padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:800;border:2px solid transparent;transition:all .15s ease}
 .btn-green{background:var(--green);color:#fff}
-.btn-green:hover{filter:brightness(0.95)}
-.btn-outline{border-color:var(--green);color:var(--green);background:#fff}
-.btn-whats{background:#16a34a}
+.btn-green:hover{transform:translateY(-1px);background:var(--green-dark)}
+.btn-outline{border-color:#fff;color:#fff;background:transparent}
+.btn-outline:hover{background:#ffffff1a}
 
-/* Nota */
-.note{font-size:13px;color:#64748b;margin-top:-6px}
+.hero-actions{margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
-/* GRID de cards */
-.grid{display:grid;gap:20px;margin:16px 0 40px}
-@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+/* TITLES / NOTE */
+.title{font-size:28px;margin:28px 0 6px}
+.note{font-size:13px;color:var(--muted);margin:0 0 18px}
 
-/* Card */
-.card{background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.06);overflow:hidden;border:1px solid #e7eef7;display:flex;flex-direction:column}
-.card img{width:100%;height:220px;object-fit:cover;background:#eaeff7}
-.card-body{padding:14px;display:flex;flex-direction:column;gap:8px}
-.meta{color:#64748b;font-size:13px;margin-top:-4px}
-.price{font-size:20px;font-weight:900;color:var(--dark)}
-.entry{background:#f0fbf4;border-radius:12px;padding:12px;margin:8px 0;border:1px dashed #cdebd6}
+/* GRID */
+.grid{display:grid;gap:24px;margin:16px 0 40px}
+@media(min-width:920px){.grid{grid-template-columns:1fr 1fr}}
+
+/* CARD */
+.card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 22px rgba(0,0,0,.06)}
+.card img{width:100%;height:240px;object-fit:cover;background:#eaeff7}
+.card-body{padding:16px}
+.card h3{margin:6px 0 4px}
+.meta{color:var(--muted);font-size:13px;margin:4px 0 12px}
 .badge{display:inline-block;background:var(--green);color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
-.card .actions{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
 
-/* Steps */
-.steps{background:#fff;border:1px solid #e7eef7;border-radius:14px;padding:14px}
+/* PRICE ROW */
+.price-row{display:flex;justify-content:space-between;align-items:center;margin:4px 0 10px}
+.price{font-size:20px;font-weight:900;color:var(--dark)}
+
+/* ENTRY BOX */
+.entry{background:#f0fbf4;border-radius:14px;padding:12px;border:1px dashed #cdebd6;margin:12px 0 8px}
+.entry .label{font-weight:700;margin-bottom:6px;color:#0f5132}
+.entry .value{font-size:22px;font-weight:900;color:#0f5132}
+.pill{display:inline-flex;align-items:center;justify-content:center;min-width:45px;height:28px;padding:0 8px;border-radius:999px;background:#e8f7ee;color:#0f5132;font-weight:700}
+
+/* SIMULATOR */
+.sim-box{border:1px solid var(--line);border-radius:14px;background:#fff;margin-top:14px;display:none}
+.sim-header{display:flex;align-items:center;justify-content:space-between;padding:14px;border-bottom:1px solid var(--line)}
+.sim-title{font-weight:800}
+.sim-close{background:transparent;border:0;font-size:22px;line-height:1;cursor:pointer;color:#94a3b8}
+.sim-inner{padding:14px}
+.sim-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.sim-chip{flex:1 1 110px;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.sim-chip h4{margin:0 0 6px}
+.sim-chip .amt{font-weight:900;color:#0f5132}
+
+.cta-row{display:flex;gap:12px;margin-top:14px}
+.btn-block{display:block;width:100%;text-align:center}
+
+/* FOOTER / STEPS */
+.steps{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
 .steps li{margin:8px 0}
-
-/* Footer */
 .footer{background:#0b1220;color:#c9d4e5;padding:26px 0;margin-top:30px}
-
-/* BENEFITS do banner */
-.benefits{
-  display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:24px
-}
-.bcard{
-  background:rgba(0,0,0,.60);
-  padding:16px 20px;
-  border-radius:12px;
-  color:#fff;
-  min-width:260px;
-  backdrop-filter:blur(2px);
-}
-.btitle{font-weight:700;font-size:1.1rem;margin-bottom:6px}
-.bdesc{opacity:.9}
-
-/* Pequenas melhorias responsivas */
-@media (max-width:640px){
-  .topbar .logo{height:46px}
-  h1{font-size:34px}
-  .hero{padding:64px 0 40px}
-}
