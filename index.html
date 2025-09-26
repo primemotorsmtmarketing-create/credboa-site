@@ -1,135 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>CredBoa — Financiamento mesmo negativado</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CredBoa</title>
+  <style>
+    :root {
+      --green: #22c55e;
+      --dark: #0f172a;
+      --ink: #0b1324;
+      --bg: #f6f8fb;
+      --line: #e7eef7;
+    }
 
-    <!-- LINK CORRETO PARA O CSS -->
-    <link rel="stylesheet" href="style.css" />
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu;
+      line-height: 1.5;
+      background: var(--bg);
+      color: var(--ink);
+    }
 
-    <!-- Fonte opcional -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Topbar -->
-    <header class="topbar">
-      <div class="topbar__inner wrap">
-        <a class="brand" href="#">
-          <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" />
-        </a>
-        <nav class="nav">
-          <a href="#estoque">Estoque</a>
-          <a href="#como-funciona">Como funciona</a>
-          <a class="whats" href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
-        </nav>
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 18px; }
+
+    /* HEADER */
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .topbar .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px; /* aumenta o espaço para acompanhar a logo maior */
+    }
+    .brand img {
+      display: block;
+      height: 90px; /* ✅ Logo maior */
+      width: auto;
+    }
+
+    .topbar nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .topbar nav a.whats {
+      color: #fff;
+      background: var(--green);
+      padding: 10px 14px;
+      border-radius: 10px;
+    }
+
+    /* HERO */
+    .hero {
+      background: url('hero-garage.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 2px solid transparent;
+      text-decoration: none;
+      background: var(--green);
+      color: white;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .hero .btn:hover {
+      transform: scale(1.05);
+      background: #17a93d;
+    }
+
+    /* BENEFITS */
+    .benefits {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .bcard {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .btitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .bdesc {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <img src="logo.png" alt="CredBoa Logo">
       </div>
-    </header>
+      <nav>
+        <a href="#estoque">Estoque</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="https://wa.me/559999999999" class="whats">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="wrap">
-        <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
-        <p>Crédito aprovado mesmo para negativados.<br />
-           <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
+  <section class="hero">
+    <h1>Negativado? Tá dboa</h1>
+    <p>Crédito aprovado mesmo para negativados.<br><span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
+    <a href="#estoque" class="btn">Ver Carros Disponíveis</a>
+    <a href="https://wa.me/559999999999" class="btn">Atendimento WhatsApp</a>
 
-        <div class="hero__buttons">
-          <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-          <a class="btn btn-green" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
-            Atendimento WhatsApp (11) 99999-9999
-          </a>
-        </div>
-
-        <div class="benefits">
-          <div class="bcard">
-            <div class="btitle">✅ Aprovação Facilitada</div>
-            <div class="bdesc">Crédito aprovado mesmo para negativados</div>
-          </div>
-          <div class="bcard">
-            <div class="btitle">💰 Entrada Flexível</div>
-            <div class="bdesc">A partir de 50% do valor do veículo</div>
-          </div>
-          <div class="bcard">
-            <div class="btitle">🚗 Carros Seminovos</div>
-            <div class="bdesc">Veículos revisados e com garantia</div>
-          </div>
-        </div>
+    <div class="benefits">
+      <div class="bcard">
+        <div class="btitle">✅ Aprovação Facilitada</div>
+        <div class="bdesc">Crédito aprovado mesmo para negativados</div>
       </div>
-    </section>
-
-    <!-- Estoque -->
-    <main id="estoque" class="wrap">
-      <h2>Estoque</h2>
-      <div class="grid">
-        <!-- Card 1 -->
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1600&auto=format&fit=crop" alt="Chevrolet Onix 1.0 LT" />
-          <div class="card-body">
-            <h3>Chevrolet Onix 1.0 LT</h3>
-            <div class="meta">2022 • 45.000 km • Manual • Flex</div>
-            <div class="price">R$ 65.000</div>
-
-            <div class="entry">
-              <strong>Entrada Mínima</strong><br />
-              <span style="font-size:22px;font-weight:800;color:#065f46">R$ 25.000</span>
-              <span style="float:right;background:#e2f7ea;padding:4px 10px;border-radius:999px;font-weight:700;color:#166534;">50%</span>
-            </div>
-
-            <div class="sim">
-              <div class="plan">24x <strong>R$ 1.696,97</strong></div>
-              <div class="plan">48x <strong>R$ 1.035,98</strong></div>
-              <div class="plan">60x <strong>R$ 910,22</strong></div>
-            </div>
-
-            <a class="btn btn-green" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Onix%201.0%20LT" target="_blank" rel="noopener">
-              Tenho Interesse
-            </a>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1a6?q=80&w=1600&auto=format&fit=crop" alt="Hyundai HB20 1.6 Comfort" />
-          <div class="card-body">
-            <h3>Hyundai HB20 1.6 Comfort</h3>
-            <div class="meta">2021 • 38.000 km • Automático • Flex</div>
-            <div class="price">R$ 58.000</div>
-
-            <div class="entry">
-              <strong>Entrada Mínima</strong><br />
-              <span style="font-size:22px;font-weight:800;color:#065f46">R$ 25.000</span>
-              <span style="float:right;background:#e2f7ea;padding:4px 10px;border-radius:999px;font-weight:700;color:#166534;">50%</span>
-            </div>
-
-            <div class="sim">
-              <div class="plan">24x <strong>R$ 1.514,00</strong></div>
-              <div class="plan">48x <strong>R$ 923,00</strong></div>
-              <div class="plan">60x <strong>R$ 810,00</strong></div>
-            </div>
-
-            <a class="btn btn-green" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20HB20%201.6%20Comfort" target="_blank" rel="noopener">
-              Tenho Interesse
-            </a>
-          </div>
-        </article>
+      <div class="bcard">
+        <div class="btitle">💰 Entrada Flexível</div>
+        <div class="bdesc">A partir de 50% do valor do veículo</div>
       </div>
-    </main>
-
-    <!-- Como funciona -->
-    <section id="como-funciona" class="wrap">
-      <h2>Como funciona</h2>
-      <ol class="steps">
-        <li>Escolha o carro.</li>
-        <li>Defina sua entrada (mín. 50%).</li>
-        <li>Simule as parcelas.</li>
-        <li>Fale no WhatsApp e finalize a aprovação.</li>
-      </ol>
-    </section>
-
-    <footer class="footer">
-      © CredBoa — Demonstração
-    </footer>
-  </body>
+      <div class="bcard">
+        <div class="btitle">🚗 Carros Seminovos</div>
+        <div class="bdesc">Revisados e com garantia</div>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
