@@ -2,84 +2,146 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CredBoa – Financiamento mesmo negativado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CredBoa — Financiamento mesmo para negativados</title>
+  <meta name="description" content="Crédito aprovado mesmo para negativados. Entrada facilitada a partir de 50%. Veja carros disponíveis e simule agora." />
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- TOPO / MENU -->
+  <!-- TOPO -->
   <header class="topbar">
     <div class="wrap">
       <div class="brand">CredBoa</div>
       <nav>
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="whats" href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
+        <a href="https://wa.me/5511999999999" target="_blank" class="whats">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO COM IMAGEM DE FUNDO -->
+  <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
-      <p>Crédito aprovado mesmo para negativados.<br>
-      <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
-      <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-      <p class="whatsapp-info">
-        📞 Atendimento WhatsApp <strong>(11) 99999-9999</strong>
-      </p>
-    </div>
 
-    <!-- CARDS DE BENEFÍCIOS -->
-    <div class="benefits">
-      <div class="bcard">
-        <div class="btitle">✅ Aprovação Facilitada</div>
-        <div class="bdesc">Crédito aprovado mesmo para negativados</div>
+      <h1>Encontre Seu<br><span class="green">Carro dos Sonhos</span></h1>
+
+      <p>
+        Crédito aprovado mesmo para negativados.<br>
+        <span class="green">Entrada facilitada</span> a partir de 50% do valor.
+      </p>
+
+      <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
+
+      <div class="whatsapp-line">
+        📞 Atendimento WhatsApp <strong>(11) 99999-9999</strong>
       </div>
-      <div class="bcard">
-        <div class="btitle">💰 Entrada Flexível</div>
-        <div class="bdesc">A partir de 50% do valor do veículo</div>
-      </div>
-      <div class="bcard">
-        <div class="btitle">🚗 Carros Seminovos</div>
-        <div class="bdesc">Veículos revisados e com garantia</div>
+
+      <!-- cards de benefícios logo abaixo do banner -->
+      <div class="benefits">
+        <div class="bcard">
+          <div class="btitle">✅ Aprovação Facilitada</div>
+          <div class="bdesc">Crédito aprovado mesmo para negativados</div>
+        </div>
+
+        <div class="bcard">
+          <div class="btitle">💰 Entrada Flexível</div>
+          <div class="bdesc">A partir de 50% do valor do veículo</div>
+        </div>
+
+        <div class="bcard">
+          <div class="btitle">🚗 Carros Seminovos</div>
+          <div class="bdesc">Veículos revisados e com garantia</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ESTOQUE -->
-  <main class="wrap">
-    <section id="estoque">
-      <h2>Estoque (via Prime Motors)</h2>
-      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>. 
-      Depois vamos integrar ao estoque em tempo real.</p>
-      <div id="cars" class="grid"></div>
-    </section>
+  <main class="wrap" id="estoque">
+    <h2>Estoque (via Prime Motors)</h2>
+    <p class="note">
+      Demonstração: esta lista é carregada manualmente. Depois vamos integrar ao estoque em tempo real.
+    </p>
 
-    <!-- COMO FUNCIONA -->
-    <section id="como-funciona">
-      <h2>Como funciona?</h2>
-      <ol class="steps">
-        <li>Escolha o carro.</li>
-        <li>Defina sua <strong>entrada</strong> (não pode ser menor que a mínima).</li>
-        <li>Simule as parcelas (24x, 48x, 60x).</li>
-        <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
-      </ol>
-    </section>
+    <div class="grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop" alt="Carro 1" />
+        <div class="card-body">
+          <div class="badge">Aceita negativado</div>
+          <h3>Chevrolet Onix 1.0 LT</h3>
+          <div class="meta">2022 • 45.000 km • Manual • Flex</div>
+          <div class="price">R$ 65.000</div>
+          <div class="entry">Entrada mínima: <strong>R$ 32.500</strong> (50%)</div>
+          <div class="sim">
+            <span class="plan">24x R$ 1.696,97</span>
+            <span class="plan">48x R$ 1.035,98</span>
+            <span class="plan">60x R$ 910,22</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1400&auto=format&fit=crop" alt="Carro 2" />
+        <div class="card-body">
+          <div class="badge">Aceita negativado</div>
+          <h3>Hyundai HB20 1.6 Comfort</h3>
+          <div class="meta">2021 • 38.000 km • Automático • Flex</div>
+          <div class="price">R$ 58.000</div>
+          <div class="entry">Entrada mínima: <strong>R$ 29.000</strong> (50%)</div>
+          <div class="sim">
+            <span class="plan">24x R$ 1.514,22</span>
+            <span class="plan">48x R$ 924,42</span>
+            <span class="plan">60x R$ 812,20</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1400&auto=format&fit=crop" alt="Carro 3" />
+        <div class="card-body">
+          <div class="badge">Aceita negativado</div>
+          <h3>Fiat Argo 1.3 Drive</h3>
+          <div class="meta">2020 • 52.000 km • Manual • Flex</div>
+          <div class="price">R$ 48.900</div>
+          <div class="entry">Entrada mínima: <strong>R$ 24.450</strong> (50%)</div>
+          <div class="sim">
+            <span class="plan">24x R$ 1.279,90</span>
+            <span class="plan">48x R$ 789,90</span>
+            <span class="plan">60x R$ 693,90</span>
+          </div>
+        </div>
+      </article>
+    </div>
   </main>
+
+  <!-- COMO FUNCIONA -->
+  <section class="wrap" id="como-funciona">
+    <h2>Como funciona</h2>
+    <ol class="steps">
+      <li>Escolha o carro.</li>
+      <li>Defina sua <strong>entrada</strong> (não pode ser menor que a mínima).</li>
+      <li>Simule as parcelas (24x, 48x, 60x).</li>
+      <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
+    </ol>
+  </section>
 
   <!-- RODAPÉ -->
   <footer class="footer">
     <div class="wrap">
-      <small>© <span id="year"></span> CredBoa – Demonstração.</small>
+      <small>© <span id="year"></span> CredBoa — Demonstração.</small>
     </div>
   </footer>
 
-  <script src="app.js"></script>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // ano automático
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
