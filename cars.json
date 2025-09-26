@@ -1,26 +1,57 @@
 [
   {
-    "modelo": "Volkswagen Gol 1.6",
-    "ano": 2015,
-    "km": 82000,
-    "cambio": "Manual",
-    "combustivel": "Flex",
-    "preco": 42000,
-    "entrada_min": 15000,
-    "taxa": 1.89,
-    "foto": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1600&auto=format&fit=crop",
-    "link": "https://primemotorsmt.com.br/"
+    "marca": "Nissan",
+    "modelo": "Frontier LE AT 4x4 Repasse",
+    "ano": 2017,
+    "km": null,
+    "combustivel": "Diesel",
+    "cor": "Prata",
+    "preco": null,
+    "image": "https://placehold.co/800x500?text=Nissan+Frontier+LE+2017",
+    "link": ""
   },
   {
-    "modelo": "Chevrolet Onix 1.0 LT",
-    "ano": 2022,
-    "km": 45000,
-    "cambio": "Manual",
+    "marca": "Nissan",
+    "modelo": "Kicks Advance 1.6 Aut",
+    "ano": 2024,
+    "km": null,
     "combustivel": "Flex",
-    "preco": 65000,
-    "entrada_min": 32500,
-    "taxa": 1.89,
-    "foto": "https://images.unsplash.com/photo-1549921296-3b4a96a7067a?q=80&w=1600&auto=format&fit=crop",
-    "link": "https://primemotorsmt.com.br/"
+    "cor": "Preto",
+    "preco": null,
+    "image": "https://placehold.co/800x500?text=Nissan+Kicks+Advance+2024",
+    "link": ""
+  },
+  {
+    "marca": "Nissan",
+    "modelo": "March 16S",
+    "ano": 2013,
+    "km": 123000,
+    "combustivel": "Flex",
+    "cor": "Prata",
+    "preco": null,
+    "image": "https://placehold.co/800x500?text=Nissan+March+2013",
+    "link": ""
+  },
+  {
+    "marca": "Nissan",
+    "modelo": "Sentra 2.0 Leilão Repasse",
+    "ano": 2014,
+    "km": null,
+    "combustivel": "Flex",
+    "cor": "Preto",
+    "preco": null,
+    "image": "https://placehold.co/800x500?text=Nissan+Sentra+2014",
+    "link": ""
+  },
+  {
+    "marca": "Nissan",
+    "modelo": "Frontier S Repasse",
+    "ano": 2014,
+    "km": null,
+    "combustivel": "Diesel",
+    "cor": "Branco",
+    "preco": null,
+    "image": "https://placehold.co/800x500?text=Nissan+Frontier+S+2014",
+    "link": ""
   }
 ]
