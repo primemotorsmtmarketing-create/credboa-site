@@ -12,13 +12,12 @@
   <!-- ===== Topbar ===== -->
   <header class="topbar">
     <div class="wrap">
-      <!-- LOGO (usa o arquivo que já está no seu repositório) -->
+      <!-- LOGO (aumentada) -->
       <a href="#" class="brand" aria-label="CredBoa">
         <img
           src="./FCS%20Branding%20-%20Fintech%20Prime%20Motors%20(1)-30.png"
           alt="CredBoa"
           class="logo"
-          height="40"
           loading="eager"
         />
       </a>
@@ -46,7 +45,7 @@
       <div class="cta-row">
         <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
 
-        <!-- Botão do WhatsApp (igual visual do de cima) -->
+        <!-- Botão WhatsApp -->
         <a class="btn btn-green outline-on-hover"
            target="_blank"
            href="https://wa.me/5511999999999?text=Ol%C3%A1%2C+quero+simular+meu+financiamento+pelo+site+CredBoa.">
@@ -54,7 +53,7 @@
         </a>
       </div>
 
-      <!-- cards de benefícios -->
+      <!-- BENEFÍCIOS -->
       <div class="benefits">
         <div class="bcard">
           <div class="btitle">✅ Aprovação Facilitada</div>
@@ -74,12 +73,11 @@
     </div>
   </section>
 
-  <!-- ===== ESTOQUE (demo) ===== -->
+  <!-- ===== ESTOQUE ===== -->
   <main class="wrap">
     <section id="estoque">
       <h2>Estoque (via Prime Motors)</h2>
-      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>. Depois vamos integrar ao estoque em tempo real.</p>
-
+      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>.</p>
       <div id="cars" class="grid"></div>
     </section>
 
@@ -102,7 +100,6 @@
 
   <script src="app.js"></script>
   <script>
-    // ano no rodapé
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
