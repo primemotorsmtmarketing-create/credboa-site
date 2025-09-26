@@ -3,33 +3,24 @@
   --dark: #0f172a;
   --ink: #0b1324;
   --bg: #f6f8fb;
-  --soft: #e7eef7;
-  --muted: #64748b;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-html, body {
+body {
   margin: 0;
-  padding: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu;
   line-height: 1.5;
   background: var(--bg);
   color: var(--ink);
 }
 
-.wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 18px;
-}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 18px; }
 
 /* Topbar */
 .topbar {
   background: #fff;
-  border-bottom: 1px solid var(--soft);
+  border-bottom: 1px solid #e7eef7;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -40,22 +31,10 @@ html, body {
   align-items: center;
   height: 64px;
 }
-.brand {
-  font-weight: 900;
-  font-size: 20px;
-  color: var(--dark);
-}
-.topbar nav a {
-  margin-left: 16px;
-  text-decoration: none;
-  color: #334155;
-  font-weight: 600;
-}
+.brand { font-weight: 900; font-size: 20px; color: var(--dark); }
+.topbar nav a { margin-left: 16px; text-decoration: none; color: #334155; font-weight: 600; }
 .topbar nav a.whats {
-  color: #fff;
-  background: var(--green);
-  padding: 10px 14px;
-  border-radius: 10px;
+  color: #fff; background: var(--green); padding: 10px 14px; border-radius: 10px;
 }
 
 /* Hero com imagem de garagem */
@@ -67,133 +46,66 @@ html, body {
   justify-content: center;
   text-align: center;
   color: #fff;
-  background:
-    url('https://images.unsplash.com/photo-1571126771168-3d0e2b5c50b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')
-    center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1589138358876-bd87d0f6a6a2?auto=format&fit=crop&w=1600&q=80')
+              center/cover no-repeat;
 }
-.hero .wrap {
-  position: relative;
-  z-index: 1;
-}
+.hero .wrap { position: relative; z-index: 1; }
 .hero h1 {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,.5);
+  text-shadow: 2px 2px 6px rgba(0,0,0,.4);
 }
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,.5);
+  text-shadow: 1px 1px 4px rgba(0,0,0,.4);
 }
-.green {
-  color: var(--green);
-}
+.green { color: var(--green); }
 .btn {
   display: inline-block;
   padding: 12px 18px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 800;
-  border: 2px solid transparent;
 }
 .btn-green {
   background: var(--green);
   color: #fff;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
-.btn-green:hover {
-  transform: scale(1.03);
-  background: #1da24e;
-}
-.whatsapp-info {
-  margin-top: 12px;
-  font-size: 1rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,.4);
-}
+.btn-green:hover { transform: scale(1.03); background: #1da24e; }
+.whatsapp-info { margin-top: 12px; font-size: 1rem; text-shadow: 1px 1px 4px rgba(0,0,0,.4); }
 
-/* Cards sobre hero */
+/* Cards */
 .benefits {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-  flex-wrap: wrap;
+  display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap;
 }
 .bcard {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
   border-radius: 12px;
   padding: 20px;
   width: 260px;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,.4);
-  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 8px rgba(0,0,0,.3);
 }
-.btitle {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.bdesc {
-  font-size: 0.95rem;
-  opacity: .9;
-}
+.btitle { font-size: 1.2rem; font-weight: bold; margin-bottom: 8px; }
+.bdesc { font-size: 0.95rem; opacity: .9; }
 
-/* Seções seguintes */
-.grid {
-  display: grid;
-  gap: 20px;
-  margin: 16px 0 40px;
-}
-@media(min-width:900px) {
-  .grid { grid-template-columns: 1fr 1fr; }
-}
+/* Cards de carro */
+.grid { display: grid; gap: 20px; margin: 16px 0 40px; }
+@media(min-width:900px) { .grid { grid-template-columns: 1fr 1fr; } }
 .card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0,0,0,.06);
-  overflow: hidden;
-  border: 1px solid var(--soft);
+  background: #fff; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  overflow: hidden; border: 1px solid #e7eef7;
 }
-.card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  background: #eaeff7;
-}
-.card-body {
-  padding: 14px;
-}
-.meta {
-  color: #64748b;
-  font-size: 13px;
-  margin: 4px 0 10px;
-}
-.price {
-  font-size: 20px;
-  font-weight: 900;
-  color: var(--dark);
-}
-.entry {
-  background: #f0fbf4;
-  border-radius: 12px;
-  padding: 12px;
-  margin: 12px 0;
-  border: 1px dashed #cdebd6;
-}
-.badge {
-  display: inline-block;
-  background: var(--green);
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 800;
-}
+.card img { width: 100%; height: 220px; object-fit: cover; }
+.card-body { padding: 14px; }
+.meta { color: #64748b; font-size: 13px; margin: 4px 0 10px; }
+.price { font-size: 20px; font-weight: 900; color: var(--dark); }
+.entry { background: #f0fbf4; border-radius: 12px; padding: 12px; margin: 12px 0; border: 1px dashed #cdebd6; }
+.badge { display: inline-block; background: var(--green); color: #fff; padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; }
 
-.footer {
-  background: #0b1220;
-  color: #c9d4e5;
-  padding: 26px 0;
-  margin-top: 30px;
-}
+/* Footer */
+.footer { background: #0b1220; color: #c9d4e5; padding: 26px 0; margin-top: 30px; }
