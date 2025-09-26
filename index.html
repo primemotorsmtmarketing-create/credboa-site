@@ -1,63 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CredBoa — Financiamento mesmo negativado</title>
+  <title>CredBoa — Financiamento mesmo para negativados</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header style="text-align:center; margin: 10px 0;">
-  <img src="FCS%20Branding%20-%20Fintech%20Prime%20Motors%20(1)-30.png" alt="Logo CredBoa" style="height: 60px;">
-</header>
+
+  <!-- TOPO / NAV -->
   <header class="topbar">
     <div class="wrap">
-      <div class="brand">CredBoa</div>
-      <nav>
+      <div class="brand">
+        <!-- Se tiver logo, troque pelo <img>:  -->
+        <!-- <img src="FCS%20Branding%20-%20Fintech%20Prime%20Motors%20(1)-30.png" alt="CredBoa" /> -->
+        CredBoa
+      </div>
+
+      <nav class="menu">
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="whats" target="_blank" href="https://wa.me/5565992769357">WhatsApp</a>
+        <a class="btn btn-green" target="_blank" href="https://wa.me/5511999999999">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-<section class="hero">
-  <div class="wrap">
-    <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
-    <p>Crédito aprovado mesmo para negativados.<br>
-    <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
 
-    <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
+    <div class="wrap hero-content">
+      <h1>
+        Encontre Seu<br />
+        <span class="green">Carro dos Sonhos</span>
+      </h1>
 
-    <p class="whatsapp-info">
-      📞 Atendimento WhatsApp <strong>(11) 99999-9999</strong>
-    </p>
+      <p class="lead">
+        Crédito aprovado mesmo para negativados.<br />
+        <span class="green">Entrada facilitada</span> a partir de 50% do valor.
+      </p>
 
-    <div class="benefits">
-      <div class="bcard">
-        <div class="btitle">✅ Aprovação Facilitada</div>
-        <div class="bdesc">Crédito aprovado mesmo para negativados</div>
-      </div>
-      <div class="bcard">
-        <div class="btitle">💰 Entrada Flexível</div>
-        <div class="bdesc">A partir de 50% do valor do veículo</div>
-      </div>
-      <div class="bcard">
-        <div class="btitle">🚗 Carros Seminovos</div>
-        <div class="bdesc">Revisados e com garantia</div>
+      <a class="btn btn-green btn-lg" href="#estoque">Ver Carros Disponíveis</a>
+
+      <p class="zap-line">📞 Atendimento WhatsApp <strong>(11) 99999-9999</strong></p>
+
+      <div class="benefits">
+        <div class="bcard">
+          <div class="btitle">✅ Aprovação Facilitada</div>
+          <div class="bdesc">Crédito aprovado mesmo para negativados</div>
+        </div>
+        <div class="bcard">
+          <div class="btitle">💰 Entrada Flexível</div>
+          <div class="bdesc">A partir de 50% do valor do veículo</div>
+        </div>
+        <div class="bcard">
+          <div class="btitle">🚗 Carros Seminovos</div>
+          <div class="bdesc">Veículos revisados e com garantia</div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- CONTEÚDO -->
   <main class="wrap">
-    <section id="estoque">
+
+    <section id="estoque" class="sec">
       <h2>Estoque (via Prime Motors)</h2>
-      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>. Depois vamos integrar ao estoque em tempo real.</p>
+      <p class="note">
+        Demonstração: esta lista é carregada de um arquivo local
+        <code>cars.json</code>. Depois vamos integrar ao estoque em tempo real.
+      </p>
+
       <div id="cars" class="grid"></div>
     </section>
 
-    <section id="como-funciona">
+    <section id="como-funciona" class="sec">
       <h2>Como funciona</h2>
       <ol class="steps">
         <li>Escolha o carro.</li>
@@ -66,6 +83,7 @@
         <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
       </ol>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -74,6 +92,10 @@
     </div>
   </footer>
 
+  <script>
+    // ano do rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
