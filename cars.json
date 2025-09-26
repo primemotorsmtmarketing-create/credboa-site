@@ -3,55 +3,46 @@
     "marca": "Nissan",
     "modelo": "Frontier LE AT 4x4 Repasse",
     "ano": 2017,
-    "km": null,
     "combustivel": "Diesel",
     "cor": "Prata",
     "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Frontier+LE+2017",
-    "link": ""
+    "image": "https://placehold.co/800x500?text=Nissan+Frontier+LE+2017"
   },
   {
     "marca": "Nissan",
     "modelo": "Kicks Advance 1.6 Aut",
     "ano": 2024,
-    "km": null,
     "combustivel": "Flex",
     "cor": "Preto",
     "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Kicks+Advance+2024",
-    "link": ""
+    "image": "https://placehold.co/800x500?text=Nissan+Kicks+Advance+2024"
   },
   {
     "marca": "Nissan",
     "modelo": "March 16S",
     "ano": 2013,
-    "km": 123000,
     "combustivel": "Flex",
     "cor": "Prata",
     "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+March+2013",
-    "link": ""
+    "image": "https://placehold.co/800x500?text=Nissan+March+2013"
   },
   {
     "marca": "Nissan",
     "modelo": "Sentra 2.0 Leilão Repasse",
     "ano": 2014,
-    "km": null,
     "combustivel": "Flex",
     "cor": "Preto",
     "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Sentra+2014",
-    "link": ""
+    "image": "https://placehold.co/800x500?text=Nissan+Sentra+2014"
   },
   {
     "marca": "Nissan",
     "modelo": "Frontier S Repasse",
     "ano": 2014,
-    "km": null,
     "combustivel": "Diesel",
     "cor": "Branco",
     "preco": null,
-    "image": "https://placehold.co/800x500?text=Nissan+Frontier+S+2014",
-    "link": ""
+    "image": "https://placehold.co/800x500?text=Nissan+Frontier+S+2014"
   }
 ]
+
