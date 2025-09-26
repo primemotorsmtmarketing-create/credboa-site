@@ -1,86 +1,63 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CredBoa — Financiamento mesmo negativado</title>
+  <title>CredBoa — Financiamento de veículos</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <!-- Topbar -->
   <header class="topbar">
     <div class="wrap">
       <a class="brand" href="#">
-        <!-- Logo maior (ajustável via CSS .topbar .logo) -->
-        <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" class="logo">
+        <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" />
       </a>
-
       <nav>
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="whats" href="https://wa.me/5599999999999?text=Ol%C3%A1%20tenho%20interesse%20no%20financiamento" target="_blank" rel="noopener">
-          WhatsApp
-        </a>
+        <a class="whats" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="wrap">
+    <div class="wrap hero-inner">
       <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
       <p>Crédito aprovado mesmo para negativados.</p>
       <p><span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
 
-      <div class="cta-row">
+      <div class="hero-actions">
         <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-        <a class="btn btn-green btn-whats" href="https://wa.me/5599999999999?text=Ol%C3%A1%20quero%20simular%20meu%20financiamento" target="_blank" rel="noopener">
+        <a class="btn btn-outline" href="https://wa.me/5599999999999?text=Quero+simular+meu+financiamento" target="_blank">
           Atendimento WhatsApp (11) 99999-9999
         </a>
-      </div>
-
-      <div class="benefits">
-        <div class="bcard">
-          <div class="btitle">✅ Aprovação Facilitada</div>
-          <div class="bdesc">Crédito aprovado mesmo para negativados</div>
-        </div>
-        <div class="bcard">
-          <div class="btitle">💰 Entrada Flexível</div>
-          <div class="bdesc">A partir de 50% do valor do veículo</div>
-        </div>
-        <div class="bcard">
-          <div class="btitle">🚗 Carros Seminovos</div>
-          <div class="bdesc">Veículos revisados e com garantia</div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- ESTOQUE -->
-  <main class="wrap">
-    <section id="estoque">
-      <h2>Estoque (via Prime Motors)</h2>
-      <p class="note">Demonstração: estes veículos foram preenchidos como exemplos da aba Nissan.</p>
+  <!-- Estoque -->
+  <main class="wrap" id="estoque">
+    <h2 class="title">Nosso Estoque</h2>
+    <p class="note">Simulação com taxa de <strong>1,89% a.m.</strong>. Valores sujeitos à aprovação de crédito.</p>
 
-      <div id="cars" class="grid">
-        <!-- cards renderizados por app.js -->
-      </div>
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section id="como-funciona">
-      <h2>Como funciona</h2>
-      <ol class="steps">
-        <li>Escolha o carro.</li>
-        <li>Defina sua <strong>entrada</strong> (não pode ser menor que a mínima).</li>
-        <li>Simule as parcelas (24x, 48x, 60x).</li>
-        <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
-      </ol>
-    </section>
+    <div id="cars" class="grid">
+      <!-- Cards carregados via JS -->
+    </div>
   </main>
 
-  <!-- FOOTER -->
+  <!-- Como funciona (opcional para manter o restante do site) -->
+  <section id="como-funciona" class="wrap" style="margin-top:40px">
+    <h2>Como funciona?</h2>
+    <ol class="steps">
+      <li>Escolha o carro.</li>
+      <li>Defina sua <strong>entrada</strong> (50% do valor do veículo ou R$25.000 – o que for maior).</li>
+      <li>Simule as parcelas em 24x, 48x ou 60x a 1,89% a.m.</li>
+      <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
+    </ol>
+  </section>
+
   <footer class="footer">
     <div class="wrap">
       <small>© <span id="year"></span> CredBoa — Demonstração.</small>
