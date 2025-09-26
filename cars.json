@@ -1,0 +1,26 @@
+[
+  {
+    "modelo": "Volkswagen Gol 1.6",
+    "ano": 2015,
+    "km": 82000,
+    "cambio": "Manual",
+    "combustivel": "Flex",
+    "preco": 42000,
+    "entrada_min": 15000,
+    "taxa": 1.89,
+    "foto": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1600&auto=format&fit=crop",
+    "link": "https://primemotorsmt.com.br/"
+  },
+  {
+    "modelo": "Chevrolet Onix 1.0 LT",
+    "ano": 2022,
+    "km": 45000,
+    "cambio": "Manual",
+    "combustivel": "Flex",
+    "preco": 65000,
+    "entrada_min": 32500,
+    "taxa": 1.89,
+    "foto": "https://images.unsplash.com/photo-1549921296-3b4a96a7067a?q=80&w=1600&auto=format&fit=crop",
+    "link": "https://primemotorsmt.com.br/"
+  }
+]

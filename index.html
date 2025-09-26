@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CredBoa — Financiamento mesmo negativado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">CredBoa</div>
+      <nav>
+        <a href="#estoque">Estoque</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a class="whats" target="_blank" href="https://wa.me/5565992769357">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Financiamento de veículos <span class="green">mesmo negativado</span></h1>
+      <p>Entrada facilitada a partir de 50% do valor. Simule agora e fale com nossa equipe.</p>
+      <a class="btn btn-green" href="#estoque">Ver carros disponíveis</a>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section id="estoque">
+      <h2>Estoque (via Prime Motors)</h2>
+      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>. Depois vamos integrar ao estoque em tempo real.</p>
+      <div id="cars" class="grid"></div>
+    </section>
+
+    <section id="como-funciona">
+      <h2>Como funciona</h2>
+      <ol class="steps">
+        <li>Escolha o carro.</li>
+        <li>Defina sua <strong>entrada</strong> (não pode ser menor que a mínima).</li>
+        <li>Simule as parcelas (24x, 48x, 60x).</li>
+        <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> CredBoa — Demonstração.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
