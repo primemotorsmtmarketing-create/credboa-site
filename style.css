@@ -1,146 +1,131 @@
 :root{
   --green:#22c55e;
-  --green-strong:#18b24c;
+  --green-600:#16a34a;
   --dark:#0f172a;
   --ink:#0b1324;
+  --ink-400:#64748b;
+  --ink-500:#475569;
+  --line:#e7eef7;
   --bg:#f6f8fb;
+  --white:#fff;
 }
 
 *{box-sizing:border-box}
-html,body{margin:0;padding:0}
+html,body{height:100%}
 body{
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;
-  line-height:1.55;
+  margin:0;
+  font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;
+  line-height:1.5;
   background:var(--bg);
   color:var(--ink);
 }
 
+/* Utils */
 .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+.section-title{font-size:26px;margin:28px 0 18px;color:var(--dark)}
 
-/* ================= Topbar ================= */
+.green{color:var(--green)}
+
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:800;
+  border:2px solid transparent;
+  transition:.2s ease;
+}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-600)}
+.btn-outline{border-color:var(--green);color:var(--green);background:#fff}
+.btn-outline:hover{background:#f0fff4}
+.btn-full{display:block;text-align:center;margin-top:10px}
+
+/* Topbar */
 .topbar{
-  position:sticky; top:0; z-index:50;
-  background:#fff; border-bottom:1px solid #e7eef7;
+  position:sticky;top:0;z-index:20;
+  background:#fff;border-bottom:1px solid var(--line);
 }
-.topbar__row{
-  display:flex; align-items:center; justify-content:space-between;
-  height:70px;
+.topbar__inner{
+  height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px;
 }
-.brand{display:block; line-height:0}
 .brand img{
-  height:56px;            /* Maior, mas controlado */
-  width:auto;
-  display:block;
-  object-fit:contain;     /* Mantém proporção */
+  display:block;height:48px; /* controla o tamanho da logo */
+  width:auto; /* mantém a proporção */
 }
-@media (min-width:980px){
-  .brand img{height:64px}
+.nav a{
+  margin-left:16px;text-decoration:none;color:#334155;font-weight:600
 }
-.menu a{
-  margin-left:16px; text-decoration:none;
-  color:#334155; font-weight:700;
-}
-.menu a.whats{
-  color:#fff; background:var(--green);
-  padding:10px 14px; border-radius:10px;
-}
+.nav a.whats{color:#fff;background:var(--green);padding:10px 14px;border-radius:10px}
 
-/* ================= HERO ================= */
+/* Hero */
 .hero{
-  position:relative;
-  min-height:520px;
-  padding:100px 0 60px;  /* espaço extra p/ a topbar */
-  color:#fff;
-  background:url('hero-garage.jpg') center/cover no-repeat;
+  position:relative;min-height:440px;display:grid;place-items:center;text-align:center;color:#fff;
+  background: url("./hero-garage.jpg") center/cover no-repeat fixed;
 }
 .hero__overlay{
-  position:absolute; inset:0;
-  background:linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.55));
+  position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,.55));
 }
-.hero__content{
-  position:relative;
-  text-align:center;
-}
+.hero__content{position:relative;z-index:1}
 .hero h1{
-  font-size:44px; margin:0 0 10px; font-weight:900;
-  text-shadow:0 6px 30px rgba(0,0,0,.5);
+  font-size:46px;line-height:1.1;margin:0 0 8px;text-shadow:2px 2px 4px rgba(0,0,0,.4)
 }
-.hero p{
-  margin:6px 0 14px; font-size:18px;
-  text-shadow:0 2px 12px rgba(0,0,0,.6);
+.hero .lead{
+  font-size:18px;margin:0 0 16px;text-shadow:1px 1px 3px rgba(0,0,0,.45)
 }
-.green{color:var(--green)}
-.hero__ctas{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:10px}
+.hero__ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
-/* Botões */
-.btn{
-  display:inline-block; padding:12px 18px; border-radius:12px;
-  font-weight:900; text-decoration:none; border:2px solid transparent;
-  box-shadow:0 8px 26px rgba(0,0,0,.18);
-}
-.btn-green{background:var(--green); color:#fff}
-.btn-green:hover{background:var(--green-strong)}
-.btn-alt{filter:saturate(1.05)}
-
-/* ================= Seções ================= */
-.h2-section{font-size:28px; margin:32px 0 18px}
-
-/* ================= Cards ================= */
-.grid{display:grid; gap:22px}
-@media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
-
+/* Cards */
+.grid{display:grid;gap:22px}
+@media(min-width:900px){.grid.cars{grid-template-columns:1fr 1fr}}
 .card{
-  background:#fff; border:1px solid #e7eef7; border-radius:16px;
-  overflow:hidden; box-shadow:0 6px 26px rgba(0,0,0,.06);
+  background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  box-shadow:0 6px 24px rgba(0,0,0,.06);
 }
-.card__media{
-  width:100%; height:210px; background:#e9eff7;
-  object-fit:cover; display:block;
+.card__media{position:relative;height:260px;background:#f5f7fb}
+.card__media img{
+  width:100%;height:100%;object-fit:cover;display:block
 }
-.card__body{padding:16px}
-.card__title{font-size:20px; font-weight:900; margin:4px 0 6px}
-.meta{color:#64748b; font-size:13px; margin:2px 0 12px}
-.price{font-size:20px; font-weight:900; color:var(--dark)}
-.entry{
-  background:#f0fbf4; border:1px dashed #cdebd6;
-  border-radius:12px; padding:12px; margin:12px 0 6px;
-  display:flex; justify-content:space-between; align-items:center;
+.badge{
+  position:absolute;right:12px;top:12px;background:rgba(15,23,42,.85);
+  color:#fff;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700
 }
-.badge{display:inline-block; background:var(--green); color:#fff; font-size:12px;
-  padding:6px 10px; border-radius:999px; font-weight:800}
+.card__body{padding:16px 16px 18px}
+.car__title{margin:6px 0 4px;font-size:22px;color:var(--dark)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;color:var(--ink-400);font-size:14px;margin-bottom:10px}
 
-/* Simulador (sempre visível) */
-.sim{
-  background:#f6fbff; border:1px solid #dfeaf7;
-  border-radius:14px; padding:14px; margin-top:12px;
-}
-.sim__title{font-weight:800; margin:0 0 10px}
-.sim__row{display:flex; gap:14px; flex-wrap:wrap}
-.sim__box{
-  flex:1 1 140px; min-width:140px;
-  background:#fff; border:1px solid #e7eef7; border-radius:12px; padding:12px;
-  text-align:center
-}
-.sim__box small{display:block; color:#64748b; margin-bottom:4px}
-.sim__val{font-weight:900; font-size:16px}
+.price-line{display:flex;justify-content:space-between;align-items:center;margin:10px 0}
+.price-line .label{color:var(--ink-500)}
+.price-line .price{font-size:20px;font-weight:800;color:var(--dark)}
 
-/* botão interesse */
-.btn-interest{
-  width:100%; text-align:center; margin-top:12px;
-  background:var(--green); color:#fff; border-radius:12px;
-  padding:14px 16px; font-weight:900; text-decoration:none;
-  display:inline-block;
+.entry-line{
+  display:flex;justify-content:space-between;align-items:center;
+  background:#f0fbf4;border-radius:12px;padding:12px;border:1px dashed #cdebd6;margin:12px 0 14px;
 }
-.btn-interest:hover{background:var(--green-strong)}
+.entry-label{color:var(--ink-500)}
+.entry-value{font-weight:800;font-size:18px}
+.entry-perc{
+  background:#e9fff1;color:#1e7e34;border:1px solid #bdf3cd;padding:4px 10px;border-radius:999px;font-weight:700
+}
 
-/* ================= How To ================= */
-.steps{background:#fff; border:1px solid #e7eef7; border-radius:14px; padding:14px}
+/* Simulação sempre visível */
+.sim{margin-top:6px;border:1px solid var(--line);border-radius:14px;padding:14px;background:#fbfcff}
+.sim h4{margin:0 0 12px;font-size:16px;color:var(--dark)}
+.sim__row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.plan{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  background:#fff;border:1px solid #e8eef8;border-radius:12px;padding:12px
+}
+.plan .months{font-weight:700;color:#334155}
+.plan .amount{font-weight:800;color:var(--dark)}
+.sim__note{font-size:12px;color:var(--ink-400);margin:10px 0 0}
+
+/* How-to */
+.howto{margin:40px 0 10px}
+.steps{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin:0}
 .steps li{margin:8px 0}
 
-/* ================= Footer ================= */
-.footer{
-  background:#0b1220; color:#c9d4e5; margin-top:40px; padding:28px 0;
-}
-.footer small{opacity:.9}
-
-
+/* Footer */
+.footer{margin-top:40px;background:#0b1220;color:#c9d4e5}
+.footer__inner{height:64px;display:flex;align-items:center;justify-content:center}
