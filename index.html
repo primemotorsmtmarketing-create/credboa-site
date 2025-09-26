@@ -1,245 +1,135 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CredBoa — Financiamento mesmo para negativados</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Topbar -->
-  <header class="topbar">
-    <div class="wrap topbar__inner">
-      <a class="brand" href="#top" aria-label="CredBoa - início">
-        <!-- mantém a proporção da imagem e limita o tamanho -->
-        <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" />
-      </a>
-      <nav class="nav">
-        <a href="#estoque">Estoque</a>
-        <a href="#como-funciona">Como funciona</a>
-        <a class="whats" href="https://wa.me/5599999999999?text=Quero%20simular%20meu%20financiamento" target="_blank" rel="noopener">WhatsApp</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CredBoa — Financiamento mesmo negativado</title>
 
-  <!-- Hero -->
-  <section class="hero" id="top" aria-label="Destaque">
-    <div class="hero__overlay"></div>
-    <div class="wrap hero__content">
-      <h1>
-        Encontre Seu <span class="green">Carro dos Sonhos</span>
-      </h1>
-      <p class="lead">
-        Crédito aprovado mesmo para negativados.<br />
-        <span class="green">Entrada facilitada</span> a partir de 50% do valor.
-      </p>
+    <!-- LINK CORRETO PARA O CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-      <div class="hero__ctas">
-        <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-        <a class="btn btn-outline" href="https://wa.me/5599999999999?text=Quero%20simular%20meu%20financiamento" target="_blank" rel="noopener">
-          Atendimento WhatsApp
+    <!-- Fonte opcional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="topbar__inner wrap">
+        <a class="brand" href="#">
+          <img src="FCS Branding - Fintech Prime Motors (1)-30.png" alt="CredBoa" />
         </a>
+        <nav class="nav">
+          <a href="#estoque">Estoque</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a class="whats" href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Estoque -->
-  <main class="wrap">
-    <h2 id="estoque" class="section-title">Estoque</h2>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
+        <p>Crédito aprovado mesmo para negativados.<br />
+           <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
 
-    <!-- Cards de carros -->
-    <section class="grid cars" aria-label="Lista de carros disponíveis">
-      <!-- Carro 1 -->
-      <article class="card" data-price="65000" data-entry="32500">
-        <figure class="card__media">
-          <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Chevrolet Onix 1.0 LT prata" />
-          <span class="badge">Aceita negativado</span>
-        </figure>
-
-        <div class="card__body">
-          <h3 class="car__title">Chevrolet Onix 1.0 LT</h3>
-          <div class="meta">
-            <span>2022</span>
-            <span>45.000 km</span>
-            <span>Manual</span>
-            <span>Flex</span>
-          </div>
-
-          <div class="price-line">
-            <span class="label">Preço Total</span>
-            <strong class="price">R$ 65.000</strong>
-          </div>
-
-          <div class="entry-line">
-            <div>
-              <span class="entry-label">Entrada Mínima</span>
-              <div class="entry-value">R$ 32.500</div>
-            </div>
-            <span class="entry-perc">50%</span>
-          </div>
-
-          <!-- Simulação sempre visível -->
-          <div class="sim">
-            <h4>Simulação de Parcelas</h4>
-            <div class="sim__row">
-              <div class="plan">
-                <div class="months">24x</div>
-                <div class="amount" data-months="24">R$ ––</div>
-              </div>
-              <div class="plan">
-                <div class="months">48x</div>
-                <div class="amount" data-months="48">R$ ––</div>
-              </div>
-              <div class="plan">
-                <div class="months">60x</div>
-                <div class="amount" data-months="60">R$ ––</div>
-              </div>
-            </div>
-            <p class="sim__note">
-              *Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.
-            </p>
-          </div>
-
-          <a class="btn btn-green btn-full" href="https://wa.me/5599999999999?text=Tenho%20interesse%20no%20Chevrolet%20Onix%201.0%20LT" target="_blank" rel="noopener">
-            Tenho Interesse
+        <div class="hero__buttons">
+          <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
+          <a class="btn btn-green" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            Atendimento WhatsApp (11) 99999-9999
           </a>
         </div>
-      </article>
 
-      <!-- Carro 2 -->
-      <article class="card" data-price="58000" data-entry="29000">
-        <figure class="card__media">
-          <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Hyundai HB20 1.6 Comfort vermelho" />
-          <span class="badge">Aceita negativado</span>
-        </figure>
-
-        <div class="card__body">
-          <h3 class="car__title">Hyundai HB20 1.6 Comfort</h3>
-          <div class="meta">
-            <span>2021</span>
-            <span>38.000 km</span>
-            <span>Automático</span>
-            <span>Flex</span>
+        <div class="benefits">
+          <div class="bcard">
+            <div class="btitle">✅ Aprovação Facilitada</div>
+            <div class="bdesc">Crédito aprovado mesmo para negativados</div>
           </div>
-
-          <div class="price-line">
-            <span class="label">Preço Total</span>
-            <strong class="price">R$ 58.000</strong>
+          <div class="bcard">
+            <div class="btitle">💰 Entrada Flexível</div>
+            <div class="bdesc">A partir de 50% do valor do veículo</div>
           </div>
-
-          <div class="entry-line">
-            <div>
-              <span class="entry-label">Entrada Mínima</span>
-              <div class="entry-value">R$ 29.000</div>
-            </div>
-            <span class="entry-perc">50%</span>
+          <div class="bcard">
+            <div class="btitle">🚗 Carros Seminovos</div>
+            <div class="bdesc">Veículos revisados e com garantia</div>
           </div>
-
-          <!-- Simulação sempre visível -->
-          <div class="sim">
-            <h4>Simulação de Parcelas</h4>
-            <div class="sim__row">
-              <div class="plan">
-                <div class="months">24x</div>
-                <div class="amount" data-months="24">R$ ––</div>
-              </div>
-              <div class="plan">
-                <div class="months">48x</div>
-                <div class="amount" data-months="48">R$ ––</div>
-              </div>
-              <div class="plan">
-                <div class="months">60x</div>
-                <div class="amount" data-months="60">R$ ––</div>
-              </div>
-            </div>
-            <p class="sim__note">
-              *Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.
-            </p>
-          </div>
-
-          <a class="btn btn-green btn-full" href="https://wa.me/5599999999999?text=Tenho%20interesse%20no%20Hyundai%20HB20%201.6%20Comfort" target="_blank" rel="noopener">
-            Tenho Interesse
-          </a>
         </div>
-      </article>
-
-      <!-- Carro 3 -->
-      <article class="card" data-price="92000" data-entry="46000">
-        <figure class="card__media">
-          <img src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Nissan Kicks 1.6 CVT branco" />
-          <span class="badge">Aceita negativado</span>
-        </figure>
-
-        <div class="card__body">
-          <h3 class="car__title">Nissan Kicks 1.6 CVT</h3>
-          <div class="meta">
-            <span>2022</span>
-            <span>29.000 km</span>
-            <span>Automático</span>
-            <span>Flex</span>
-          </div>
-
-          <div class="price-line">
-            <span class="label">Preço Total</span>
-            <strong class="price">R$ 92.000</strong>
-          </div>
-
-          <div class="entry-line">
-            <div>
-              <span class="entry-label">Entrada Mínima</span>
-              <div class="entry-value">R$ 46.000</div>
-            </div>
-            <span class="entry-perc">50%</span>
-          </div>
-
-          <!-- Simulação sempre visível -->
-          <div class="sim">
-            <h4>Simulação de Parcelas</h4>
-            <div class="sim__row">
-              <div class="plan">
-                <div class="months">24x</div>
-                <div class="amount" data-months="24">R$ ––</div>
-              </div>
-              <div class="plan">
-                <div class="months">48x</div>
-                <div class="amount" data-months="48">R$ ––</div>
-              </div>
-              <div class="plan">
-                <div class="months">60x</div>
-                <div class="amount" data-months="60">R$ ––</div>
-              </div>
-            </div>
-            <p class="sim__note">
-              *Simulação com taxa de 1,89% a.m. Valores sujeitos à aprovação de crédito.
-            </p>
-          </div>
-
-          <a class="btn btn-green btn-full" href="https://wa.me/5599999999999?text=Tenho%20interesse%20no%20Nissan%20Kicks%201.6%20CVT" target="_blank" rel="noopener">
-            Tenho Interesse
-          </a>
-        </div>
-      </article>
+      </div>
     </section>
+
+    <!-- Estoque -->
+    <main id="estoque" class="wrap">
+      <h2>Estoque</h2>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?q=80&w=1600&auto=format&fit=crop" alt="Chevrolet Onix 1.0 LT" />
+          <div class="card-body">
+            <h3>Chevrolet Onix 1.0 LT</h3>
+            <div class="meta">2022 • 45.000 km • Manual • Flex</div>
+            <div class="price">R$ 65.000</div>
+
+            <div class="entry">
+              <strong>Entrada Mínima</strong><br />
+              <span style="font-size:22px;font-weight:800;color:#065f46">R$ 25.000</span>
+              <span style="float:right;background:#e2f7ea;padding:4px 10px;border-radius:999px;font-weight:700;color:#166534;">50%</span>
+            </div>
+
+            <div class="sim">
+              <div class="plan">24x <strong>R$ 1.696,97</strong></div>
+              <div class="plan">48x <strong>R$ 1.035,98</strong></div>
+              <div class="plan">60x <strong>R$ 910,22</strong></div>
+            </div>
+
+            <a class="btn btn-green" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20Onix%201.0%20LT" target="_blank" rel="noopener">
+              Tenho Interesse
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1a6?q=80&w=1600&auto=format&fit=crop" alt="Hyundai HB20 1.6 Comfort" />
+          <div class="card-body">
+            <h3>Hyundai HB20 1.6 Comfort</h3>
+            <div class="meta">2021 • 38.000 km • Automático • Flex</div>
+            <div class="price">R$ 58.000</div>
+
+            <div class="entry">
+              <strong>Entrada Mínima</strong><br />
+              <span style="font-size:22px;font-weight:800;color:#065f46">R$ 25.000</span>
+              <span style="float:right;background:#e2f7ea;padding:4px 10px;border-radius:999px;font-weight:700;color:#166534;">50%</span>
+            </div>
+
+            <div class="sim">
+              <div class="plan">24x <strong>R$ 1.514,00</strong></div>
+              <div class="plan">48x <strong>R$ 923,00</strong></div>
+              <div class="plan">60x <strong>R$ 810,00</strong></div>
+            </div>
+
+            <a class="btn btn-green" href="https://wa.me/5511999999999?text=Tenho%20interesse%20no%20HB20%201.6%20Comfort" target="_blank" rel="noopener">
+              Tenho Interesse
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
 
     <!-- Como funciona -->
-    <section id="como-funciona" class="howto">
-      <h2 class="section-title">Como funciona</h2>
+    <section id="como-funciona" class="wrap">
+      <h2>Como funciona</h2>
       <ol class="steps">
         <li>Escolha o carro.</li>
-        <li>Defina sua <strong>entrada</strong> (mínimo 50%).</li>
-        <li>Simule as parcelas e fale conosco no WhatsApp.</li>
+        <li>Defina sua entrada (mín. 50%).</li>
+        <li>Simule as parcelas.</li>
+        <li>Fale no WhatsApp e finalize a aprovação.</li>
       </ol>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="wrap footer__inner">
-      <small>© CredBoa — Demonstração.</small>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
-</body>
+    <footer class="footer">
+      © CredBoa — Demonstração
+    </footer>
+  </body>
 </html>
