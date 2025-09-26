@@ -31,3 +31,4 @@
 
   document.querySelectorAll(".card").forEach(atualizarCard);
 })();
+
