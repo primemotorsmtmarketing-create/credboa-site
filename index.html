@@ -1,69 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>CredBoa — Financiamento para negativados</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CredBoa – Financiamento mesmo negativado</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- TOPO / MENU -->
   <header class="topbar">
     <div class="wrap">
       <div class="brand">CredBoa</div>
       <nav>
         <a href="#estoque">Estoque</a>
         <a href="#como-funciona">Como funciona</a>
-        <a class="whats" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
+        <a class="whats" href="https://wa.me/5511999999999" target="_blank">WhatsApp</a>
       </nav>
     </div>
   </header>
 
+  <!-- HERO COM IMAGEM DE FUNDO -->
   <section class="hero">
-    <div class="wrap hero-content">
-      <h1>Encontre Seu<br/><span class="green">Carro dos Sonhos</span></h1>
-      <p>Crédito aprovado mesmo para negativados.<br/>
-         <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
+    <div class="wrap">
+      <h1>Encontre Seu <span class="green">Carro dos Sonhos</span></h1>
+      <p>Crédito aprovado mesmo para negativados.<br>
+      <span class="green">Entrada facilitada</span> a partir de 50% do valor.</p>
       <a class="btn btn-green" href="#estoque">Ver Carros Disponíveis</a>
-      <div class="whatsapp-info">📞 Atendimento WhatsApp <strong>(11) 99999-9999</strong></div>
-      <div class="benefits">
-        <div class="bcard">
-          <div class="btitle">✅ Aprovação Facilitada</div>
-          <div class="bdesc">Mesmo para negativados</div>
-        </div>
-        <div class="bcard">
-          <div class="btitle">💰 Entrada Flexível</div>
-          <div class="bdesc">A partir de 50% do valor</div>
-        </div>
-        <div class="bcard">
-          <div class="btitle">🚗 Carros Revisados</div>
-          <div class="bdesc">Seminovos com garantia</div>
-        </div>
+      <p class="whatsapp-info">
+        📞 Atendimento WhatsApp <strong>(11) 99999-9999</strong>
+      </p>
+    </div>
+
+    <!-- CARDS DE BENEFÍCIOS -->
+    <div class="benefits">
+      <div class="bcard">
+        <div class="btitle">✅ Aprovação Facilitada</div>
+        <div class="bdesc">Crédito aprovado mesmo para negativados</div>
+      </div>
+      <div class="bcard">
+        <div class="btitle">💰 Entrada Flexível</div>
+        <div class="bdesc">A partir de 50% do valor do veículo</div>
+      </div>
+      <div class="bcard">
+        <div class="btitle">🚗 Carros Seminovos</div>
+        <div class="bdesc">Veículos revisados e com garantia</div>
       </div>
     </div>
   </section>
 
-  <main class="wrap" id="estoque">
-    <h2>Estoque (via Prime Motors)</h2>
-    <p class="note">Dados de demonstração via <code>cars.json</code>.</p>
-    <div class="grid">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=60" alt="">
-        <div class="card-body">
-          <div class="meta">2022 • 45.000 km • Manual • Flex</div>
-          <div class="price">R$ 65.000</div>
-          <div class="entry">Entrada mínima: <strong>R$ 32.500</strong></div>
-          <span class="badge">Aceita negativado</span>
-        </div>
-      </article>
-    </div>
+  <!-- ESTOQUE -->
+  <main class="wrap">
+    <section id="estoque">
+      <h2>Estoque (via Prime Motors)</h2>
+      <p class="note">Demonstração: esta lista é carregada de um arquivo local <code>cars.json</code>. 
+      Depois vamos integrar ao estoque em tempo real.</p>
+      <div id="cars" class="grid"></div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona">
+      <h2>Como funciona?</h2>
+      <ol class="steps">
+        <li>Escolha o carro.</li>
+        <li>Defina sua <strong>entrada</strong> (não pode ser menor que a mínima).</li>
+        <li>Simule as parcelas (24x, 48x, 60x).</li>
+        <li>Envie no <strong>WhatsApp</strong> e conclua a aprovação.</li>
+      </ol>
+    </section>
   </main>
 
+  <!-- RODAPÉ -->
   <footer class="footer">
-    <div class="wrap">© <span id="year"></span> CredBoa</div>
+    <div class="wrap">
+      <small>© <span id="year"></span> CredBoa – Demonstração.</small>
+    </div>
   </footer>
 
+  <script src="app.js"></script>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
